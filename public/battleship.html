@@ -13,12 +13,43 @@
 			margin: auto;
 			background: url("board.jpg") no-repeat;
 		}
+		div#messageArea {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			color: rgb(83, 175, 19);
+		}
+		table {
+			border-spacing: 0px; 
+			/* could use border-collapse instead */
+			/* border-collapse: collapse; */
+			position: absolute;
+			left: 173px;
+			top: 98px;
+		}
+		td {
+			width: 94px;
+			height: 94px;
+		}
+		form {
+			position: absolute;
+			bottom: 0px;
+			right: 0px;
+			padding: 15px;
+			background-color: rgb(83, 175, 19);
+		}
+		form input {
+			background-color: rgb(152, 207, 113);
+			border-color: rgb(83, 175, 19);
+			font-size: 1em;
+		}
 
 		
 	</style>
 </head>
 <body>
 	<div id="board">
+	<div id="messageArea"></div>
 		<table>
 			<tr>
 			<td id="00"></td> <td id="01"></td> <td id="02"></td> <td id="03"></td>
@@ -50,6 +81,10 @@
 			</tr>
 			</table>
 	</div>
+	<form>
+		<input type="text" id="guessInput" placeholder="A0">
+		<input type="button" id="fireButton" value="Fire!">
+	</form>
 
 <script type="battleship.js"></script>
 </body>
