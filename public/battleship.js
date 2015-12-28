@@ -17,15 +17,6 @@ var view = {
 }; 
 
 
-view.displayMiss("00");
-view.displayHit("34");
-view.displayMiss("55");
-view.displayHit("12");
-view.displayMiss("25");
-view.displayHit("26");
-
-view.displayMessage("Tap tap, is this thing on?");
-
 var model = {
 	boardSize: 7,
 	numShips: 3,
@@ -67,4 +58,21 @@ var model = {
 			}
 		}
 	    return true;
-	}
+}
+
+var controller = {
+	 guesses: 0,
+
+	 processGuess: function(guess) {
+	 	var location = parseGuess(guess);
+
+	 	if(location) {
+	 		this.guesses++;
+	 		var hit = model.fire(location);
+	 		if(hit && model.shipsSunk === model.numShips) {
+	 			view.displayMessage("You sank all of my battleships!! It only took you" + this.guesses "guesses...");
+	 		}
+	 	}
+	 }
+
+}
