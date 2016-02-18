@@ -7,4 +7,4 @@ To help with the design of the code, I chose a Model View Controller design.
 
 Created Using: JavaScript, HTML5, CSS3, Twitter Bootstrap
 
-Link to project: http://agile-anchorage-16824.herokuapp.com/
+Link to project: http://battleship-clone.herokuapp.com 
