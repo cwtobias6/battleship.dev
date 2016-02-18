@@ -6,3 +6,5 @@ The player must guess where the computer's 3 battleships are located on the map 
 To help with the design of the code, I chose a Model View Controller design. 
 
 Created Using: JavaScript, HTML5, CSS3, Twitter Bootstrap
+
+Link to project: http://agile-anchorage-16824.herokuapp.com/
